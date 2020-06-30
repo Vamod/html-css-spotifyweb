@@ -4,8 +4,36 @@
     box-sizing: border-box;
 }
 
-.clearfix::after {
-    content: '';
-    display: table;
-    clear: both;
+.container {
+    display: flex;
+}
+
+aside {
+    flex: 0 0 30px;
+    height: 100vh;
+
+    background-color: #000000;
+}
+
+.container-right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nav-bar_top {
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000000;
+}
+
+.nav-bar_menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    padding: 0 2px;
 }
