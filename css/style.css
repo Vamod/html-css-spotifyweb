@@ -37,7 +37,7 @@ aside {
 
 /* inizio container right */
 .container-right {
-    width: calc(100% - 110px);
+    /* width: calc(100% - 110px); */
     /* height: calc(100vh - 70px); */
 
 }
@@ -81,8 +81,8 @@ aside {
 
 /* inizio main */
 main {
-    height: calc(100vh - 190px);
-    /* margin-top: 110px; */
+    /* sottrazione delle due navbar e del player */
+    height: calc(100vh - 180px);
     background-color: #141922;
 
 }
@@ -111,8 +111,12 @@ main {
 
 .player {
     height: 70px;
+    width: 100%;
     background-color: gray;
     z-index: 1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 
