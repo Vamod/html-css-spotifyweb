@@ -37,18 +37,18 @@ aside {
 
 /* inizio container right */
 .container-right {
-    width: calc(100% - 30px);
+    width: calc(100% - 110px);
     /* height: calc(100vh - 70px); */
 
 }
 
 /* inizio nav-bar */
-nav {
+/* nav {
     position: fixed;
     top: 0;
     right: 0;
     left: 39px;
-}
+} */
 
 
 .nav-bar_top {
@@ -81,9 +81,14 @@ nav {
 
 /* inizio main */
 main {
-    height: 100vh;
-    margin-top: 110px;
+    height: calc(100vh - 190px);
+    /* margin-top: 110px; */
     background-color: #141922;
+
+}
+
+.videos-gallery {
+    height: 100%;
     overflow-y: scroll;
 }
 
