@@ -29,6 +29,7 @@ section.artisti-popolari {
 aside {
     width: 40px;
     height: calc(100vh - 70px);
+    padding: 10px;
     background-color: #000000;
     display: flex;
     flex-direction: column;
@@ -50,16 +51,29 @@ aside .icon-box a {
 }
 
 aside .icon-text {
-    display: inline-block;
+    display: none;
 }
 
 .playlist-aside h4 {
     text-transform: uppercase;
 }
 
-.play-list-aside > .icon-box {
+.crea-playlist-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.crea-playlist-box > a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.playlist-aside i {
     font-size: 30px;
 }
+
 /* fine aside */
 
 /* inizio container right */
@@ -121,7 +135,6 @@ main {
 
 .hamburgher a {
     font-size: 25px;
-
     text-decoration: none;
     color: white;
 }
@@ -159,9 +172,14 @@ main {
     bottom: 0;
 }
 
+.player i {
+    color: white;
+}
+
 .player-left {
     height: 40px;
     display: flex;
+    align-items: center;
     flex: 1;
     flex-wrap: wrap;
 }
@@ -180,29 +198,44 @@ main {
     justify-content: center;
 }
 
+.player-center-top > .cmd-box {
+    margin-right: 20px;
+}
+
 .player-center-bottom {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+
+
 .player-center-bottom > .play-bar {
-    height: 4px;
-    width: 100%;
+    height: 2px;
+    width: 60%;
+    margin: 0 10px;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
 .player-right {
     display: flex;
+    align-items: center;
     flex: 1;
 }
 
-.volume-bar {
-    height: 4px;
-    width: 50px;
-    background-color: white;
-    border-radius: 2px;
+.player-right > .cmd-box {
+    margin-right: 10px;
 }
+
+.volume-bar {
+    height: 2px;
+    width: 40%;
+    background-color: white;
+    border-radius: 1px;
+}
+
+
 /* fine player */
 
 /* media query */
@@ -253,6 +286,10 @@ main {
 
     .logo-box-small {
         display: none;
+    }
+
+    aside .icon-text {
+        display: inline-block;
     }
 
     /* fine aside */
