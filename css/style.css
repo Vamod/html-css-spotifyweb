@@ -58,6 +58,7 @@ aside .icons-box {
 
 aside .icon-box {
     margin-bottom: 10px;
+    font-size: 25px;
     /* text-align: center; */
 }
 
@@ -66,15 +67,28 @@ aside .icon-box a {
     color:#a3a3a3;
 }
 
+.icon-box:hover  a {
+    color: white;
+}
+
+.icon-box:hover .icon-text {
+    color: white;
+}
+
+.crea-playlist-box:hover a {
+    color: white;
+}
+
+
+
 aside .icon-text {
     display: none;
-    font-size: 12px;
+    font-size: 11px;
     color:#a3a3a3;
 }
 
 .playlist-aside h4 {
     text-transform: uppercase;
-
 }
 
 .crea-playlist-box {
@@ -84,7 +98,7 @@ aside .icon-text {
 }
 
 .crea-playlist-box .crea-playlist {
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 5px;
 }
 
@@ -100,8 +114,12 @@ aside .icon-text {
 
 .playlist-aside > ul {
     list-style: none;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 30px;
+}
+
+.playlist-aside li:hover a {
+    color: white;
 }
 
 .playlist-aside a {
@@ -129,8 +147,13 @@ aside .icon-text {
     color: white;
     background-color: transparent;
     text-transform: uppercase;
+    transition: all 0.5s;
 }
 
+.nav-bar_top button:hover {
+    transform: scale(1.1);
+
+}
 /* fine navbar */
 
 /* inizio main */
@@ -170,6 +193,10 @@ main {
     font-size: 11px;
 }
 
+.menu-item a:hover {
+    color: white;
+}
+
 .hamburgher a {
     font-size: 25px;
     text-decoration: none;
@@ -178,6 +205,7 @@ main {
 
 .videos-gallery h2 {
     padding-left: 6px;
+    margin-bottom: 10px;
 }
 
 .videos {
@@ -186,9 +214,44 @@ main {
     justify-content: flex-start;
 }
 
+.videos h4 {
+    text-transform: capitalize;
+
+}
+
+.videos .subtitles {
+    font-size: 11px;
+
+}
+
 .video {
     padding: 6px;
     flex: 0 1 150px;
+}
+
+.video-top {
+    position: relative;
+}
+
+.overlay-play {
+    display: none;
+}
+
+.video-top:hover .overlay-play {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-play i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
 }
 
 .video-top img {
@@ -196,6 +259,13 @@ main {
     height: 130px;
     object-fit: cover;
 }
+
+.video-bottom {
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
 
 /* fine container right */
 
