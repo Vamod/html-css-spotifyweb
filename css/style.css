@@ -87,6 +87,10 @@ aside .icon-text {
     color:#a3a3a3;
 }
 
+.playlist-aside {
+    margin-top: 10px;
+}
+
 .playlist-aside h4 {
     text-transform: uppercase;
 }
@@ -94,7 +98,7 @@ aside .icon-text {
 .crea-playlist-box {
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .crea-playlist-box .crea-playlist {
@@ -291,24 +295,42 @@ main {
 .player-left {
     display: flex;
     align-items: center;
-    flex: 1;
+    /* flex-grow: 0; */
 }
 
 .player-img img {
-    height: 40px;
+    height: 35px;
 }
 
-/* .player-text {
-    display: flex;
-} */
+.player-text {
+    font-size: 11px;
+    margin-left: 5px;
+
+}
 
 .player-left .author,
 .player-left .track-name {
-    font-size: 14px;
+    font-size: 11px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.player-left .track-name {
+    color: #717171;
+}
+
+.favourite-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+.favourite-icons .icon-box {
+    margin-left: 10px;
 }
 
 .player-center {
-    flex: 3;
+    flex-grow: 3;
 }
 
 .player-center-top {
@@ -325,38 +347,55 @@ main {
     font-size: 30px;
 }
 
+#play:hover {
+    transform: scale(1.2);
+}
+
 .player-center-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.player-center-bottom > input {
+    width: 60%;
+    margin: 0 10px;
+}
 
+.player-center-bottom span {
+    font-size: 11px;
+    color: white;
+}
 
-.player-center-bottom > .play-bar {
+/* .player-center-bottom > .play-bar {
     height: 2px;
     width: 60%;
     margin: 0 10px;
     background-color: white;
     border-radius: 1px;
-}
+} */
 
 .player-right {
     display: flex;
     align-items: center;
-    flex: 1;
+    /* flex-grow: 0; */
 }
 
 .player-right > .cmd-box {
     margin-right: 10px;
+    font-size: 14px;
 }
 
-.volume-bar {
+.player-right > input {
+    width: 100%;
+}
+
+/* .volume-bar {
     height: 2px;
     width: 40%;
     background-color: white;
     border-radius: 1px;
-}
+} */
 
 
 /* fine player */
