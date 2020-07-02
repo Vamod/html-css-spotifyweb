@@ -19,33 +19,42 @@
                         <div class="logo-box">
                             <a href="#">  <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png" alt="spotify-logo"></a>
                         </div>
-                        <div class="icon-box">
-                            <a href="#">
-                                <i class="fas fa-home"></i>
-                                <div class="icon-text">home</div>
-                            </a>
-                        </div>
-                        <div class="icon-box">
-                            <a href="#">
-                                <i class="fas fa-search"></i>
-                                <div class="icon-text">cerca</div>
-                            </a>
-                        </div>
-                        <div class="icon-box">
-                            <a href="#">
-                                <i class="fas fa-book-open"></i>
-                                <div class="icon-text">home</div>
-                            </a>
+
+                        <div class="icons-box">
+                            <div class="icon-box">
+                                <a href="#">
+                                    <i class="fas fa-home"></i>
+                                    <div class="icon-text">Home</div>
+                                </a>
+                            </div>
+                            <div class="icon-box">
+                                <a href="#">
+                                    <i class="fas fa-search"></i>
+                                    <div class="icon-text">Cerca</div>
+                                </a>
+                            </div>
+                            <div class="icon-box">
+                                <a href="#">
+                                    <i class="fas fa-book-open"></i>
+                                    <div class="icon-text">La tua libreria</div>
+                                </a>
+                            </div>
                         </div>
                         <div class="playlist-aside">
                             <h4>playlist</h4>
                             <div class="crea-playlist-box">
-                                <a href="#">
-                                    <div class="icon-box"><i class="fas fa-plus-square"></i></div>    
-                                    <div class="crea-playlist">Crea playlist</div>
-                                </a>
-
+                                <div class="icon-box"> <a href="#"><i class="fas fa-plus-square"></i></a></div>
+                                <div class="crea-playlist"><a href="#">Crea playlist</a></div>
                             </div>
+                            <ul>
+                                <li><a href="">nome playlist</a></li>
+                                <li><a href="">nome playlist</a></li>
+                                <li><a href="">nome playlist</a></li>
+                                <li><a href="">nome playlist</a></li>
+                                <li><a href="">nome playlist</a></li>
+                                <li><a href="">nome playlist</a></li>
+                                <li><a href="">nome playlist</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="aside-bottom">
@@ -58,7 +67,7 @@
                         <div class="icon-box">
                             <a href="#">
                                 <i class="fas fa-user"></i>
-                                <div class="icon-text">John doe </div>
+                                <div class="icon-text">John doe</div>
                             </a>
                         </div>
                     </div>
@@ -92,7 +101,6 @@
                                         <div class="video-bottom">
                                             <h4>my girls</h4>
                                             <div class="subtitles">animal collective</div>
-
                                         </div>
                                     </div>
                                     <div class="video">
@@ -102,7 +110,6 @@
                                         <div class="video-bottom">
                                             <h4>killing in the name of</h4>
                                             <div class="subtitles">rage against the machine</div>
-
                                         </div>
                                     </div>
                                     <div class="video">
@@ -112,7 +119,6 @@
                                         <div class="video-bottom">
                                             <h4>a forest</h4>
                                             <div class="subtitles">the cure</div>
-
                                         </div>
                                     </div>
                                     <div class="video">
@@ -122,7 +128,6 @@
                                         <div class="video-bottom">
                                             <h4>best of</h4>
                                             <div class="subtitles">the smiths</div>
-
                                         </div>
                                     </div>
                                     <div class="video">
@@ -151,12 +156,10 @@
                                     <div class="video">
                                         <div class="video-top">
                                             <img src="https://www.flickofthefinger.co.uk/wp-content/uploads/2017/02/Radiohead-band-2011.jpg" alt="radiohead">
-
                                         </div>
                                         <div class="video-bottom">
                                             <h4>in rainbows</h4>
                                             <div class="subtitles">radiohead</div>
-
                                         </div>
                                     </div>
                                     <div class="video">
@@ -166,10 +169,8 @@
                                         <div class="video-bottom">
                                             <h4>storia di un impiegato</h4>
                                             <div class="subtitles">fabrizio de andrè</div>
-
                                         </div>
                                     </div>
-
                                 </div>
                             </section>
                             <section class="artisti-popolari">
@@ -178,12 +179,10 @@
                                     <div class="video">
                                         <div class="video-top">
                                             <img src="https://www.free-largeimages.com/wp-content/uploads/2014/12/Pharrell_williams_happy_-8.jpg" alt="Pharrell_williams">
-
                                         </div>
                                         <div class="video-bottom">
                                             <h4>happy</h4>
                                             <div class="subtitles">pharrell williams</div>
-
                                         </div>
                                     </div>
                                     <div class="video">
@@ -207,13 +206,15 @@
                     <div class="player-img">
                         <img src="http://alarm-magazine.com/wp-content/uploads/2007/12/gogol-bordello-big.jpg" alt="player-img">
                     </div>
-                    <div class="author">gogol bordello</div>
-                    <div class="track-name">gipsy punk</div></div>
+                    <div class="player-text">
+                        <div class="author">gogol bordello</div>
+                        <div class="track-name">gipsy punk</div></div>
+                    </div>
                 <div class="player-center">
                     <div class="player-center-top">
                         <div class="cmd-box"><a href="#"><i class="fas fa-random"></i></a></div>
                         <div class="cmd-box"><a href="#"><i class="fas fa-step-backward"></i></a></div>
-                        <div class="cmd-box"><a href="#"><i class="far fa-play-circle"></i></a></div>
+                        <div id="play" class="cmd-box"><a href="#"><i class="far fa-play-circle"></i></a></div>
                         <div class="cmd-box"><a href="#"><i class="fas fa-step-forward"></i></a></div>
                         <div class="cmd-box"><a href="#"><i class="fas fa-redo"></i></a></div>
                     </div>
@@ -229,8 +230,6 @@
                     <div class="cmd-box"><a href="#"><i class="fas fa-volume-up"></i></a></div>
                     <div class="volume-bar"></div>
                 </div>
-
-
             </div>
         </div>
 

@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+h2 {
+
+}
+
+h4 {
+    font-size: 12px;
+}
 .container {
     display: flex;
 
@@ -45,23 +52,40 @@ aside {
     text-align: center;
 }
 
+aside .icons-box {
+    margin-top: 20px;
+}
+
+aside .icon-box {
+    margin-bottom: 10px;
+    /* text-align: center; */
+}
+
 aside .icon-box a {
     text-decoration: none;
-    color: white;
+    color:#a3a3a3;
 }
 
 aside .icon-text {
     display: none;
+    font-size: 12px;
+    color:#a3a3a3;
 }
 
 .playlist-aside h4 {
     text-transform: uppercase;
+
 }
 
 .crea-playlist-box {
     display: flex;
     align-items: center;
-    width: 100%;
+    margin-top: 20px;
+}
+
+.crea-playlist-box .crea-playlist {
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 .crea-playlist-box > a {
@@ -74,25 +98,38 @@ aside .icon-text {
     font-size: 30px;
 }
 
-/* fine aside */
-
-/* inizio container right */
-.container-right {
-    /* width: calc(100% - 110px); */
-    /* height: calc(100vh - 70px); */
-
+.playlist-aside > ul {
+    list-style: none;
+    font-size: 12px;
+    line-height: 30px;
 }
+
+.playlist-aside a {
+    text-decoration: none;
+    color: #a3a3a3;
+}
+/* fine aside */
 
 /* inizio nav-bar */
 
 .nav-bar_top {
     height: 70px;
+    padding: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: #000000;
+    background-color: #080b12;
 }
 
+
+.nav-bar_top button {
+    padding: 10px 35px;
+    border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+}
 
 /* fine navbar */
 
@@ -139,6 +176,10 @@ main {
     color: white;
 }
 
+.videos-gallery h2 {
+    padding-left: 6px;
+}
+
 .videos {
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +211,7 @@ main {
     position: fixed;
     left: 0;
     bottom: 0;
+    padding: 10px;
 }
 
 .player i {
@@ -177,15 +219,22 @@ main {
 }
 
 .player-left {
-    height: 40px;
     display: flex;
     align-items: center;
     flex: 1;
-    flex-wrap: wrap;
 }
 
 .player-img img {
     height: 40px;
+}
+
+/* .player-text {
+    display: flex;
+} */
+
+.player-left .author,
+.player-left .track-name {
+    font-size: 14px;
 }
 
 .player-center {
@@ -200,6 +249,10 @@ main {
 
 .player-center-top > .cmd-box {
     margin-right: 20px;
+}
+
+.player-center-top #play {
+    font-size: 30px;
 }
 
 .player-center-bottom {
@@ -250,6 +303,11 @@ main {
     .logo-box {
         display: none;
     }
+
+    aside .icon-box {
+        text-align: center;
+    }
+
 
     .icon-text {
         display: none;
