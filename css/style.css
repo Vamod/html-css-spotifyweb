@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-h2 {
-
-}
-
 h4 {
     font-size: 12px;
 }
@@ -35,7 +31,6 @@ section.artisti-popolari {
 
 aside {
     width: 40px;
-    /* height: calc(100vh - 70px); */
     padding: 10px;
     background-color: #000000;
     display: flex;
@@ -477,6 +472,8 @@ main {
         display: none;
     }
 
+    /* inzio player */
+
     .favourite-icons {
         margin-left: 40px;
     }
@@ -486,13 +483,14 @@ main {
     }
 
     .player-center-top > .cmd-box {
-        margin-right: 40px;
+        margin: 0 30px 5px 30px;
     }
 
     .player-right > .cmd-box {
         margin-right: 10px;
     }
 
+    /* fine player */
 }
 
 @media screen and (min-width: 992px) {
