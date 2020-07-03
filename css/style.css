@@ -35,7 +35,7 @@ section.artisti-popolari {
 
 aside {
     width: 40px;
-    height: calc(100vh - 70px);
+    /* height: calc(100vh - 70px); */
     padding: 10px;
     background-color: #000000;
     display: flex;
@@ -162,7 +162,7 @@ aside .icon-text {
 
 /* inizio main */
 main {
-    /* sottrazione delle due navbar e del player */
+    /* sottrazione della navbar e del player */
     height: calc(100vh - 140px);
     background-color: #141922;
 
@@ -295,11 +295,11 @@ main {
 .player-left {
     display: flex;
     align-items: center;
-    /* flex-grow: 0; */
+    flex-shrink: 1;
 }
 
 .player-img img {
-    height: 35px;
+    height: 25px;
 }
 
 .player-text {
@@ -322,15 +322,16 @@ main {
 .favourite-icons {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .favourite-icons .icon-box {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .player-center {
     flex-grow: 3;
+    flex-shrink: 1;
 }
 
 .player-center-top {
@@ -340,7 +341,7 @@ main {
 }
 
 .player-center-top > .cmd-box {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .player-center-top #play {
@@ -367,35 +368,20 @@ main {
     color: white;
 }
 
-/* .player-center-bottom > .play-bar {
-    height: 2px;
-    width: 60%;
-    margin: 0 10px;
-    background-color: white;
-    border-radius: 1px;
-} */
-
 .player-right {
     display: flex;
     align-items: center;
-    /* flex-grow: 0; */
+    flex-shrink: 1;
 }
 
 .player-right > .cmd-box {
-    margin-right: 10px;
+    margin-right: 5px;
     font-size: 14px;
 }
 
 .player-right > input {
     width: 100%;
 }
-
-/* .volume-bar {
-    height: 2px;
-    width: 40%;
-    background-color: white;
-    border-radius: 1px;
-} */
 
 
 /* fine player */
@@ -431,6 +417,13 @@ main {
     .menu-item {
         display: none;
     }
+
+    /* inizio player */
+
+    .favourite-icons {
+        margin-right: 10px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -472,6 +465,23 @@ main {
     .hamburgher {
         display: none;
     }
+
+    .favourite-icons {
+        margin-left: 40px;
+    }
+
+    .player-img img {
+        height: 35px;
+    }
+
+    .player-center-top > .cmd-box {
+        margin-right: 40px;
+    }
+
+    .player-right > .cmd-box {
+        margin-right: 10px;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
