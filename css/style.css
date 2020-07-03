@@ -58,8 +58,7 @@ aside .icons-box {
 
 aside .icon-box {
     margin-bottom: 10px;
-    font-size: 25px;
-    /* text-align: center; */
+    font-size: 18px;
 }
 
 aside .icon-box a {
@@ -326,12 +325,14 @@ main {
 }
 
 .favourite-icons .icon-box {
-    margin-left: 5px;
+    margin-left: 10px;
+    font-size: 14px;
 }
 
 .player-center {
     flex-grow: 3;
     flex-shrink: 1;
+    margin: 0 7px;
 }
 
 .player-center-top {
@@ -340,17 +341,22 @@ main {
     justify-content: center;
 }
 
+.player-center-top i {
+    font-size: 12px;
+}
+
 .player-center-top > .cmd-box {
     margin-right: 10px;
 }
 
 .player-center-top #play {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #play:hover {
     transform: scale(1.2);
 }
+
 
 .player-center-bottom {
     display: flex;
@@ -376,7 +382,7 @@ main {
 
 .player-right > .cmd-box {
     margin-right: 5px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .player-right > input {
@@ -438,6 +444,11 @@ main {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+    }
+
+
+    aside .icon-box {
+        font-size: 25px;
     }
 
     .logo-box img {
